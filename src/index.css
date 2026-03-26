@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Ensure the app background fills the whole viewport and remove white gaps */
+html, body, #root {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #020617;
+	color: #fff;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+	scroll-behavior: smooth;
+}
+
+/* typing cursor animation */
+@keyframes blink {
+	0%, 49% { opacity: 1; }
+	50%, 100% { opacity: 0; }
+}
+.typing-cursor {
+	display: inline-block;
+	margin-left: 6px;
+	width: 6px;
+	color: #60a5fa; /* light-blue */
+	animation: blink 1s steps(2, start) infinite;
+}
+
+/* Animated gradient text for header */
+.gradient-animate {
+	background: linear-gradient(90deg, #9be7ff 0%, #60a5fa 40%, #c084fc 100%);
+	background-size: 200% 200%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	display: inline-block;
+	animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
