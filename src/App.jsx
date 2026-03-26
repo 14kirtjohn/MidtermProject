@@ -130,6 +130,8 @@ function App() {
             playing video games in a computer shop. This curiosity later grew
             into exploring how software systems work and how technology can be
             used to build creative and helpful solutions.
+            <br /><br />
+            My goal is to become a full-stack developer and create systems that are not only functional but also helpful to the community. I want to build applications that solve real-world problems, especially in areas like environmental management and public services. In the future, I also aim to explore advanced technologies like Artificial Intelligence and GIS to make systems more intelligent and efficient.
           </p>
         </Section>
 
@@ -308,6 +310,10 @@ function App() {
 
             <p className="text-justify">
               <strong>Future applications:</strong> I want to build practical and community-focused applications, such as smart environmental management systems, health monitoring platforms, or intelligent public service tools. Projects that solve real problems, improve everyday life, and promote sustainability using emerging technologies.
+            </p>
+
+            <p className="text-justify">
+              <strong>Concepts I learned:</strong> In this project, I learned important concepts in React.js such as components, state management using useState, and handling side effects using useEffect. I also learned how to create reusable components to make my code more organized and maintainable.
             </p>
           </div>
         </Section>
