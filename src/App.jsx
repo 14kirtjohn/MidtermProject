@@ -15,7 +15,6 @@ function App() {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  // Small typing component for header
   const Typing = ({ text, speed = 80, className = "" }) => {
     const [display, setDisplay] = useState("");
     useEffect(() => {
@@ -62,19 +61,14 @@ function App() {
   return (
     <div className="relative min-h-screen text-white px-6 py-10 overflow-hidden">
 
-      {/* Background (fixed to viewport so it always fills the screen) */}
       <div className="fixed inset-0 z-0 bg-gradient-to-br from-[#020617] via-[#04102a] to-[#0b1220]" />
 
-      {/* Glow Lights (fixed so they're not clipped by parent padding) */}
       <div className="fixed top-[-200px] left-[-200px] w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] z-0" />
       <div className="fixed bottom-[-200px] right-[-200px] w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[120px] z-0" />
 
-      {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto">
 
-        {/* Header (topbar + hero) */}
         <header className="relative mb-12">
-          {/* Top bar: brand left, centered nav, github right */}
           <div className="absolute inset-x-0 top-4 flex items-center justify-between px-6 z-20">
             <div className="flex items-center gap-3">
               <span className="font-semibold text-lg"></span>
@@ -105,7 +99,6 @@ function App() {
             </a>
           </div>
 
-          {/* Hero: left text, right portrait */}
           <div className="pt-12">
             <div className="grid md:grid-cols-2 items-center gap-8">
               <div className="space-y-6">
@@ -127,7 +120,6 @@ function App() {
           </div>
         </header>
 
-        {/* About Me */}
         <Section title="About Me" id="about">
           <p className="leading-relaxed text-gray-300 text-justify">
             I am Kirt John Dionson Balasabas, born and raised in Santa Cruz,
@@ -141,7 +133,6 @@ function App() {
           </p>
         </Section>
 
-        {/* Accomplishments */}
         <Section title="Accomplishments & Interests" id="accomplishments">
           <ul className="space-y-3">
             <li className="flex items-start gap-3">
@@ -173,7 +164,6 @@ function App() {
           </p>
         </Section>
 
-        {/* Skills */}
         <Section title="Skills" id="skills">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -251,7 +241,6 @@ function App() {
           </div>
         </Section>
 
-        {/* Projects */}
         <Section title="Projects" id="projects">
           <div className="space-y-4 text-gray-300">
             <div>
@@ -299,7 +288,6 @@ function App() {
           </div>
         </Section>
 
-        {/* Reflection */}
         <Section title="Reflection" id="reflection">
           <div className="space-y-4 text-gray-300">
             <p className="text-justify">
